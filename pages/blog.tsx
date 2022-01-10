@@ -1,15 +1,15 @@
-import { HomePage } from "../components/HomePage";
+import { BlogPage } from "../components/Blog";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { theme } from "./theme";
 
 
-function Home(){
+function Blog(){
   return (
     <ThemeProvider theme={theme}>
 
-    <HomePage/>
+    <BlogPage/>
     </ThemeProvider>
   )
 }
 
-export default Home;
+export default Blog;
