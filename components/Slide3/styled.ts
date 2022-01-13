@@ -65,15 +65,15 @@ padding-bottom:5vh;
 #textTop{
     z-index:1;
     position:absolute;
-    margin-left:40%;
-    margin-top:3%;
+    margin-left:25rem;
+    margin-top:3rem;
     color:white;
 }
 #textBottom{
     z-index:1;
     position:absolute;
-    margin-left:45%;
-    margin-top:7%;
+    margin-left:31rem;
+    margin-top:6rem;
     color:white;
 }
 `

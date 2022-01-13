@@ -3,11 +3,11 @@ import Image from "next/image";
 import { StyledBanner } from "./styled"; 
 import { Typography } from "@mui/material";
 
+
+
 export const Banner=(props)=>{
 return(
     <StyledBanner>
-
-
     <div className="banner">
     <div className="text">
     <Typography variant="h3" id="title">{props.title}</Typography>

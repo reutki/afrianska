@@ -1,15 +1,7 @@
 import { HomePage } from "../components/HomePage";
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { theme } from "./theme";
 
-
-function Home(){
-  return (
-    <ThemeProvider theme={theme}>
-
-    <HomePage/>
-    </ThemeProvider>
-  )
+function Home() {
+  return <HomePage />;
 }
 
 export default Home;
