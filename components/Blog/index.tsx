@@ -8,6 +8,8 @@ import { ArticleMain } from "../Articles/ArticleMain";
 import { ArticleHorizontal } from "../Articles/ArticleHorizontal";
 import { ArticleVertical } from "../Articles/ArticleVertical";
 import { Box } from "@mui/system";
+import { Footer } from "../Footer";
+import { Button, Divider, Typography } from "@mui/material";
 export const BlogPage = () => {
   return (
     <StyleBlog>
@@ -21,7 +23,11 @@ export const BlogPage = () => {
           <SearchBar />
         </Box>
 
-        <Box className="popular"></Box>
+        <Box className="popular" sx={{ paddingTop: "2rem" }}>
+          <Typography variant="h5" color={"primary.light"}>
+            Popular
+          </Typography>
+        </Box>
         <Box className="articles">
           <ArticleMain
             src="/article-image.png"
@@ -32,20 +38,95 @@ export const BlogPage = () => {
             readTime="3 min"
             author="Samatha Leuthex"
           />
-          {/* <ArticleHorizontal /> */}
-          <ArticleVertical
-            src="/article-image2.png"
-            alt="image of a house"
-            title="Feugiat sodales at nullam tellus."
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum."
-            date="May 5"
-            readTime="3 min"
-            author="Samatha Leuthex"
-          />
+          <Box className="popularVertical">
+            <ArticleVertical
+              src="/article-image2.png"
+              alt="image of a house"
+              title="Feugiat sodales at nullam tellus."
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum."
+              date="May 5"
+              readTime="3 min"
+              author="Samatha Leuthex"
+            />
+            <ArticleVertical
+              src="/article-image3.png"
+              alt="image of a house"
+              title="Feugiat sodales at nullam tellus."
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum."
+              date="May 5"
+              readTime="3 min"
+              author="Samatha Leuthex"
+            />
+            <ArticleVertical
+              src="/article-image4.png"
+              alt="image of a house"
+              title="Feugiat sodales at nullam tellus."
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum."
+              date="May 5"
+              readTime="3 min"
+              author="Samatha Leuthex"
+            />
+          </Box>
+          <Box sx={{ display: "flex", alignItems: "self-end", width: "100%" }}>
+            <Button>See All Popular Article</Button>
+          </Box>
+          <Divider fullWidth />
+          <Box className="allArticle">
+            <Box className="popular" sx={{ paddingTop: "2rem" }}>
+              <Typography variant="h5" color={"primary.light"}>
+                All Article
+              </Typography>
+            </Box>
+            <ArticleHorizontal
+              src="/article-image5.png"
+              alt="image of a house"
+              title="Feugiat sodales at nullam tellus."
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum."
+              date="May 5"
+              readTime="3 min"
+              author="Samatha Leuthex"
+            />
+            <ArticleHorizontal
+              src="/article-image6.png"
+              alt="image of a house"
+              title="Feugiat sodales at nullam tellus."
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum."
+              date="May 5"
+              readTime="3 min"
+              author="Samatha Leuthex"
+            />
+            <ArticleHorizontal
+              src="/article-image7.png"
+              alt="image of a house"
+              title="Feugiat sodales at nullam tellus."
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum."
+              date="May 5"
+              readTime="3 min"
+              author="Samatha Leuthex"
+            />
+            <ArticleHorizontal
+              src="/article-image8.png"
+              alt="image of a house"
+              title="Feugiat sodales at nullam tellus."
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum."
+              date="May 5"
+              readTime="3 min"
+              author="Samatha Leuthex"
+            />
+            <ArticleHorizontal
+              src="/article-image9.png"
+              alt="image of a house"
+              title="Feugiat sodales at nullam tellus."
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum."
+              date="May 5"
+              readTime="3 min"
+              author="Samatha Leuthex"
+            />
+          </Box>
         </Box>
         <div className="navigation"></div>
-        <div className="footer"></div>
       </Box>
+      <Footer />
     </StyleBlog>
   );
 };

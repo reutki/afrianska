@@ -40,6 +40,7 @@ export const ArticleStyle = styled.div`
     object-fit: contain;
   }
   .grid {
-    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 `;

@@ -1,9 +1,10 @@
 import styled from "@emotion/styled";
 
-export const ArticleStyle = styled.div`
+export const ArticleVerticalStyle = styled.div`
   padding-top: 2rem;
   padding-bottom: 2rem;
-  .contaier {
+  padding-inline: 5%;
+  .contaier2 {
     width: 100%;
     height: 100%;
   }
@@ -18,8 +19,8 @@ export const ArticleStyle = styled.div`
     gap: 2.5rem;
   }
   .info {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
   }
   .buttons {
     display: flex;
@@ -34,12 +35,9 @@ export const ArticleStyle = styled.div`
   .image {
     display: block;
     position: relative;
-    width: 30rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     object-fit: contain;
-  }
-  .grid {
-    height: 100%;
   }
 `;

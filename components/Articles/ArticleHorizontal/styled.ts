@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
 
-export const ArticleHorizontal = styled.div`
+export const ArticleHorizontalStyle = styled.div`
   padding-top: 2rem;
   padding-bottom: 2rem;
-  .contaier {
-    width: 100%;
-    height: 100%;
+  .contaier3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .text-main {
     display: flex;
@@ -15,11 +15,11 @@ export const ArticleHorizontal = styled.div`
   .text {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1rem;
   }
   .info {
     display: grid;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: 0.5fr 0.1fr;
   }
   .buttons {
     display: flex;
@@ -34,12 +34,14 @@ export const ArticleHorizontal = styled.div`
   .image {
     display: block;
     position: relative;
-    width: 30rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     object-fit: contain;
   }
-  .grid {
-    height: 100%;
-  }
+`;
+
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
 `;

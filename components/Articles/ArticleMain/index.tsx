@@ -17,14 +17,14 @@ export const ArticleMain: React.FC<Props> = ({
 }) => {
   return (
     <ArticleStyle>
-      <Box className="container">
+      <Box className="container2">
         <Box className="grid">
           <Box className="text">
             <Box className="text-main">
               <Typography variant="h3" fontWeight={600} color={"primary.dark"}>
                 {title}
               </Typography>
-              <Box>
+              <Box sx={{ paddingRight: "2%" }}>
                 <Typography variant="body2" color={"primary.dark"}>
                   {description}
                 </Typography>

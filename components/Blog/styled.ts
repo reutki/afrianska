@@ -12,10 +12,14 @@ export const StyleBlog = styled.div`
     width: 20rem;
   }
   .container {
-    padding-inline: 15%;
+    padding-inline: 10%;
   }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .popularVertical {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 `;
