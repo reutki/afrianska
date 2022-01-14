@@ -25,17 +25,20 @@ export const CardMUI: React.FC<Props> = ({
     <>
       <ThemeProvider theme={theme}>
         <CardStyle>
-          <Paper elevation={6} sx={{ maxWidth: "15rem", padding: "3rem" }}>
-            <Image {...{ width, height, src, alt, title, description }} />
+          <Paper elevation={6} sx={{ maxWidth: "380px", padding: "48px" }}>
+            <Image
+              width="100px"
+              {...{ height, src, alt, title, description }}
+            />
             <Typography
+              sx={{ marginLeft: "" }}
               gutterBottom
               color="primary.dark"
               variant="h5"
-              component="div"
             >
               {title}
             </Typography>
-            <Typography gutterBottom color="primary.dark" variant="body1">
+            <Typography gutterBottom color="primary.dark" variant="body2">
               {description}
             </Typography>
             <Button color="secondary">

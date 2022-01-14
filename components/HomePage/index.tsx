@@ -8,7 +8,6 @@ import { ClientComponent } from "../Clients";
 export const HomePage = () => {
   return (
     <>
-      <Navbar />
       <Slide1 />
       <Slide2 />
       <Slide3 />

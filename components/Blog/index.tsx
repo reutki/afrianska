@@ -70,7 +70,7 @@ export const BlogPage = () => {
           <Box sx={{ display: "flex", alignItems: "self-end", width: "100%" }}>
             <Button>See All Popular Article</Button>
           </Box>
-          <Divider fullWidth />
+          <Divider variant="fullWidth" />
           <Box className="allArticle">
             <Box className="popular" sx={{ paddingTop: "2rem" }}>
               <Typography variant="h5" color={"primary.light"}>

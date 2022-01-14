@@ -20,7 +20,7 @@ export const ArticleHorizontal: React.FC<Props> = ({
         <Box className="image">
           <Image
             width={"100%"}
-            height={"100%"}
+            height={"80%"}
             layout="responsive"
             {...{ src, alt }}
           />

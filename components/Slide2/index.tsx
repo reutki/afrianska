@@ -14,22 +14,19 @@ import {
 import ArrowForward from "@mui/icons-material/ArrowForward";
 
 import * as S from "./styled";
-import { width, height } from "@mui/system";
-import { title } from "process";
 
 export const Slide2 = () => {
   return (
     <S.Main className="main">
       <S.Left className="left">
-        <S.Title className="title">
-          <Typography variant="h4" fontWeight={500} color="primary" id="text">
+        <S.Title>
+          <Typography variant="h3" color="primary">
             What we do to help our client grow in digital era
           </Typography>
         </S.Title>
         <CardMUI
           src={"/illustration-card2.svg"}
-          width={"380"}
-          height={"250"}
+          height={"525px"}
           alt={"card1"}
           title={"Make Your Business To Be Better Famous In Internet"}
           description={
