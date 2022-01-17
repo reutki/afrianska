@@ -4,6 +4,7 @@ export const StyledBanner = styled.div`
   .banner {
     position: relative;
     text-align: center;
+    margin-top: 3vh;
     width: 100%;
     height: 15rem;
     display: block;

@@ -2,7 +2,7 @@ import React from "react";
 import { FC } from "react";
 import Image from "next/image";
 import { StyledBanner } from "./styled";
-import { Typography } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 
 type Props = {
   title: string;
@@ -12,16 +12,16 @@ type Props = {
 export const Banner: FC<Props> = ({ title, description }) => {
   return (
     <StyledBanner>
-      <div className="banner">
-        <div className="text">
+      <Box className="banner">
+        <Box className="text">
           <Typography variant="h3" id="title">
             {title}
           </Typography>
           <Typography variant="body2" id="description">
             {description}
           </Typography>
-        </div>
-        <div className="title-image">
+        </Box>
+        <Box className="title-image">
           <Image
             className="bubbles"
             src={"/Bubbles.svg"}
@@ -29,8 +29,8 @@ export const Banner: FC<Props> = ({ title, description }) => {
             alt="blue image with bubbles"
             objectFit="cover"
           />
-        </div>
-      </div>
+        </Box>
+      </Box>
     </StyledBanner>
   );
 };

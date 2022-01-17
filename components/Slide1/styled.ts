@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { theme } from "../../pages/theme";
 
 export const Background = styled.div`
   padding-top: 4vh;
@@ -8,11 +9,16 @@ export const Background = styled.div`
     rgba(152, 195, 232, 0) 31.12%
   );
   width: 100%;
+  height: 100%;
 `;
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: 0.7fr 1fr;
-  padding-inline: 20px;
+  padding: 0 20px;
+
+  ${theme.breakpoints.up("md")} {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+  }
 `;
 export const Left = styled.div`
   display: flex;

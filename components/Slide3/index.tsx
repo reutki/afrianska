@@ -1,35 +1,35 @@
 import React from "react";
 import Image from "next/image";
-import { Paper, Typography } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 import { Slide3Style } from "./styled";
 export const Slide3 = () => {
   return (
     <Slide3Style>
-      <div className="main">
-        <div className="info">
-          <div className="title">
-            <Typography variant="h4" color="primary.dark" fontWeight={600}>
+      <Box className="main">
+        <Box className="info">
+          <Box className="title">
+            <Typography variant="h3" color="primary.dark">
               Our Finished Project
             </Typography>
-          </div>
-          <div className="comment">
+          </Box>
+          <Box className="comment">
             <Typography variant="body2" color="primary.dark">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </Typography>
-          </div>
-        </div>
-        <div className="boxes">
-          <div className="BoxTop">
-            <Paper sx={{ width: "60rem", height: "30%" }} elevation={3}>
-              <Typography variant="h4" id="textTop">
+          </Box>
+        </Box>
+        <Box className="boxes">
+          <Box className="BoxTop">
+            <Paper sx={{ width: "940px", height: "200px" }} elevation={3}>
+              <Typography variant="h4" align="right" id="textTop">
                 Smart Home Installation
               </Typography>
-              <Typography variant="h6" id="textBottom">
+              <Typography variant="h6" align="right" id="textBottom">
                 In Muarakana Housing Estate
               </Typography>
-              <div className="cover">
+              <Box className="cover">
                 <Image
                   id="image"
                   src={"/image-office.png"}
@@ -38,16 +38,16 @@ export const Slide3 = () => {
                   height={30}
                   width={70}
                 />
-              </div>
+              </Box>
             </Paper>
-          </div>
+          </Box>
 
-          <div className="boxDown">
-            <Paper sx={{ width: "50rem" }} elevation={3}>
+          <Box className="boxDown">
+            <Paper sx={{ width: "420px" }} elevation={3}>
               <Typography variant="h5" id="text">
                 Sparklite App
               </Typography>
-              <div className="cover">
+              <Box className="cover">
                 <Image
                   id="image"
                   src={"/sparklite-app.png"}
@@ -56,13 +56,13 @@ export const Slide3 = () => {
                   height={30}
                   width={30}
                 />
-              </div>
+              </Box>
             </Paper>
-            <Paper sx={{ width: "50rem" }} elevation={3}>
+            <Paper sx={{ width: "420px" }} elevation={3}>
               <Typography variant="h5" id="text">
                 Car-Repetition App
               </Typography>
-              <div className="cover">
+              <Box className="cover">
                 <Image
                   id="image"
                   src={"/car-repetition app.png"}
@@ -71,11 +71,11 @@ export const Slide3 = () => {
                   height={30}
                   width={30}
                 />
-              </div>
+              </Box>
             </Paper>
-          </div>
-        </div>
-      </div>
+          </Box>
+        </Box>
+      </Box>
     </Slide3Style>
   );
 };

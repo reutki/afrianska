@@ -41,7 +41,7 @@ export const Footer = () => {
             </Typography>
           </Box>
           <Box sx={{ alignItems: "center", display: "flex" }} className="right">
-            <Button variant="contained" color="secondary">
+            <Button href={"/contact"} variant="contained" color="secondary">
               Let&apos;s Talk
             </Button>
           </Box>

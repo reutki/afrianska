@@ -1,5 +1,14 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
+const breakpoints = {
+  xs: 0,
+  sm: 592,
+  md: 980,
+  lg: 980,
+  xl: 1200,
+  xxl: 1480,
+};
+
 export const theme = createTheme({
   palette: {
     primary: {
@@ -23,6 +32,11 @@ export const theme = createTheme({
       lineHeight: "46px",
       letterSpacing: "5%",
     },
+    h4: {
+      fontSize: "36px",
+      lineHeight: "46px",
+      letterSpacing: "5%",
+    },
     h5: {
       fontSize: "20px",
       lineHeight: "30px",
@@ -37,5 +51,8 @@ export const theme = createTheme({
       letterSpacing: "0.05rem",
       fontWeight: "100",
     },
+  },
+  breakpoints: {
+    values: { ...breakpoints },
   },
 });

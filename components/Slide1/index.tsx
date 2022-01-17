@@ -11,7 +11,7 @@ export const Slide1 = () => {
   return (
     <>
       <Background>
-        <Container sx={{ paddingTop: "5vh" }} fixed>
+        <Container sx={{ marginTop: "5vh", paddingBottom: "180px" }} fixed>
           <Grid>
             <Left>
               <Text>
